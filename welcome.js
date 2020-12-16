@@ -1,13 +1,22 @@
 
 
-
-
 function run(){
 
+  test()
   welcome()
-  questions()
-  Continue()
+  showBook()  
+  
 }
+
+function test(){
+  let input2= prompt("Please enter re-write this word (books) to make sure you are not a robot ")
+
+  while(input2 !== 'books'){
+    input2= prompt("enter the right word (books) ")
+  }
+}
+
+
 
 
 function welcome(){
@@ -23,27 +32,37 @@ function welcome(){
 
 }
 
-function questions(){
- let userInput = prompt("Do you love reading ? (yes / no ");
+let getBook = function(){
+  let book = '<img src="book1.png">'
 
-  if (userInput == "yes"){
-    alert("We wish you find what do you want to read")}
-    else if (userInput == "no"){
-      alert("Reading strengthens the mind,try to read a book to nourish your mind")
-    }
-    else {
-      alert ("Unknown")
-    }
+  return book;
 }
 
 
-  function Continue(){
 
-if (confirm("Press a button! to continue")) {
-   alert( "You pressed OK!");
-  } else {
-    alert( "You pressed Cancel!");
+let howMany = function (){
+  
+let count=prompt("How many books do you want ?")
+
+while(count === "" || isNaN(count)) {
+  count = prompt("Please enter the number of books do you want!!");
+
+}
+return count;
+
+}
+
+let showBook = function() {
+  let book1 = getBook();
+  let total = howMany();
+  let result = "";
+
+  for(let i = 0; i < total; i++) {
+    result = result + '<p>book number #' + i + " " + book1 + '</p>'
   }
+
+  alert("Please scroll down to see your book/s");
+  return result;
 }
 
 run()
