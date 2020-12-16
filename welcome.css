@@ -1,0 +1,47 @@
+body {background-color:#FAEBD7;}
+
+h1 {
+    color: rgb(168, 11, 37);
+    border-style: ridge;
+    background-color: plum;
+  }
+  h2 {
+    color: plum;
+    border-style: dotted;
+    background-color: rgb(168, 11, 37)
+  }
+
+  img {
+    border: 2px solid rgb(3, 51, 58);
+    
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  div1 {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+  }
+  
+  div2 {
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+  }
+  footer{
+      color: rgb(61, 7, 7);
+  }
+
+  ol{
+      color: rgb(129, 8, 113);
+      padding: 20px;
+
+  }
+
+  ul {
+    list-style-type: square;
+    padding: 20px;
+
+}
