@@ -33,8 +33,8 @@ function welcome(){
 }
 
 let getBook = function(){
-  let book = '<img src="book1.png">'
-
+  let book ="<img src= 1.png>"
+  
   return book;
 }
 
