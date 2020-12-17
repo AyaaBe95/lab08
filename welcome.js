@@ -65,6 +65,6 @@ let showBook = function() {
   return result;
 }
 
-run()
+run();
 
 
